@@ -14,14 +14,14 @@ TODO
 ## How-to
 
 ```js
-import {assign} from 'nodash.js/object'
-
-let obj = {a: 1}
-obj::assign({b: 2}, {c: 3}) // → { 'a': 1, 'b': 2, 'c': 3 }
-
-
-import {map} from 'nodash.js/collection'
+import {map} from 'nodash-collection'
 
 let a = [1, 2, 3]
 a::map(x => x * 3) // → [3, 6, 9]
+
+
+import {partialRight} from 'nodash-function'
+
+const mapTriple = map::partialRight(x => x * 3)
+a::mapTriple() // → [3, 6, 9]
 ```
