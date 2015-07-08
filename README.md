@@ -7,6 +7,8 @@ Write JavaScript code without lodash/underscore
 
 TODO
 
+See also: https://github.com/reindexio/youmightnotneedunderscore
+
 ## New bind operator proposal to rescue !
 
 TODO
